@@ -1,5 +1,6 @@
 package com.autotest.utils;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
@@ -27,7 +28,7 @@ public class SeleniumUtil {
 
 	public WebDriver driver = null;
 
-	@BeforeClass
+	
 	public void startBrowers() {
 
 		System.setProperty("webdriver.chrome.driver", "data/chromedriver.exe");
@@ -40,7 +41,7 @@ public class SeleniumUtil {
 		}
 	}
 
-	@AfterClass
+	
 	public void closeBrower() {
 		if (driver != null) {
 			driver.quit();
@@ -127,6 +128,16 @@ public class SeleniumUtil {
 	public WebElement findElement(By by) {
 		return driver.findElement(by);
 	}
+	
+	
+	/**
+	 * 
+	 * @param by
+	 * @return
+	 */
+	public List<WebElement> findElements(By by) {
+		return driver.findElements(by);
+	}
 
 	/**
 	 * 最大化浏览器
@@ -174,8 +185,7 @@ public class SeleniumUtil {
 	 * @param str
 	 */
 	public void checkLoginResult(String str) {
-		System.out.println(str);
-		sleep(1);
+		sleep();
 		Assert.assertEquals(str,findElement(LoginPage.LP_RESULT).getText());
 
 	}

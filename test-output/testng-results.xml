@@ -2,12 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8699" started-at="2016-07-21T07:15:17Z" finished-at="2016-07-21T07:15:26Z">
+  <suite name="Default suite" duration-ms="7457" started-at="2016-07-21T10:20:10Z" finished-at="2016-07-21T10:20:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8699" started-at="2016-07-21T07:15:17Z" finished-at="2016-07-21T07:15:26Z">
+    <test name="Default test" duration-ms="7457" started-at="2016-07-21T10:20:10Z" finished-at="2016-07-21T10:20:17Z">
       <class name="com.autotest.testcase.Login">
-        <test-method status="PASS" signature="LoginTest(java.util.Map)[pri:0, instance:com.autotest.testcase.Login@2d10609a]" name="LoginTest" duration-ms="8365" started-at="2016-07-21T15:15:18Z" data-provider="testData" finished-at="2016-07-21T15:15:26Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.autotest.testcase.Login@628e5ef0]" name="openBrowser" is-config="true" duration-ms="2165" started-at="2016-07-21T18:20:10Z" finished-at="2016-07-21T18:20:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="LoginTest(java.util.Map)[pri:0, instance:com.autotest.testcase.Login@628e5ef0]" name="LoginTest" duration-ms="4028" started-at="2016-07-21T18:20:12Z" data-provider="testData" finished-at="2016-07-21T18:20:16Z">
           <params>
             <param index="0">
               <value>
@@ -18,6 +22,10 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.autotest.testcase.Login@628e5ef0]" name="closeBrowser" is-config="true" duration-ms="982" started-at="2016-07-21T18:20:16Z" finished-at="2016-07-21T18:20:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- com.autotest.testcase.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

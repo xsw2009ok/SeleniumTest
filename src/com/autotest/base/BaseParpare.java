@@ -14,8 +14,23 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import com.autotest.utils.ExcelDataProvider;
 import com.autotest.utils.SeleniumUtil;
+
 public class BaseParpare {
 
+	protected SeleniumUtil su = new SeleniumUtil();
+	
+	@BeforeClass
+	public void openBrowser(){
+	
+	su.startBrowers();
+	}
+	
+	@AfterClass
+	public void closeBrowser(){
+	su.closeBrower();
+	}
+	
+	
 	
 	/**
 	 * 测试数据提供者 - 方法

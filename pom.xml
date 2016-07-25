@@ -70,7 +70,7 @@
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<!--定义maven运行测试生成的报表路径 -->
-					<reportsDirectory>./test-report</reportsDirectory>
+					<reportsDirectory>./test-output</reportsDirectory>
 				</configuration>
 			</plugin>
       

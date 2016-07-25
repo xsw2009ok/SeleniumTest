@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7457" started-at="2016-07-21T10:20:10Z" finished-at="2016-07-21T10:20:17Z">
+  <suite name="selenium_login" duration-ms="7406" started-at="2016-07-25T10:46:07Z" finished-at="2016-07-25T10:46:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7457" started-at="2016-07-21T10:20:10Z" finished-at="2016-07-21T10:20:17Z">
+    <test name="Test" duration-ms="7406" started-at="2016-07-25T10:46:07Z" finished-at="2016-07-25T10:46:14Z">
       <class name="com.autotest.testcase.Login">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.autotest.testcase.Login@628e5ef0]" name="openBrowser" is-config="true" duration-ms="2165" started-at="2016-07-21T18:20:10Z" finished-at="2016-07-21T18:20:12Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.autotest.testcase.Login@628e5ef0]" name="openBrowser" is-config="true" duration-ms="2179" started-at="2016-07-25T18:46:07Z" finished-at="2016-07-25T18:46:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="LoginTest(java.util.Map)[pri:0, instance:com.autotest.testcase.Login@628e5ef0]" name="LoginTest" duration-ms="4028" started-at="2016-07-21T18:20:12Z" data-provider="testData" finished-at="2016-07-21T18:20:16Z">
+        <test-method status="PASS" signature="LoginTest(java.util.Map)[pri:0, instance:com.autotest.testcase.Login@628e5ef0]" name="LoginTest" duration-ms="3956" started-at="2016-07-25T18:46:09Z" data-provider="testData" finished-at="2016-07-25T18:46:13Z">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.autotest.testcase.Login@628e5ef0]" name="closeBrowser" is-config="true" duration-ms="982" started-at="2016-07-21T18:20:16Z" finished-at="2016-07-21T18:20:17Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.autotest.testcase.Login@628e5ef0]" name="closeBrowser" is-config="true" duration-ms="961" started-at="2016-07-25T18:46:13Z" finished-at="2016-07-25T18:46:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.autotest.testcase.Login -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- selenium_login -->
 </testng-results>

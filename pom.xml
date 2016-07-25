@@ -45,7 +45,9 @@
   
     <sourceDirectory>src</sourceDirectory>
     <plugins>
+    
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.3</version>
         <configuration>
@@ -68,7 +70,7 @@
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<!--定义maven运行测试生成的报表路径 -->
-					<reportsDirectory>./result/test-report</reportsDirectory>
+					<reportsDirectory>./test-report</reportsDirectory>
 				</configuration>
 			</plugin>
       

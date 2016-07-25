@@ -2,12 +2,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="selenium_login" parallel="tests" thread-count="2">
 
-  <test name="Test">
+  <test name="Test" preserve-order="true">
   
-    <packages>
-      <package name="com.autotest.testcase.Login"/>
-    </packages>
+    <classes>
+      <class name="com.autotest.testcase.Login"/>
+    </classes>
     
   </test> <!-- Test -->
+  
+  <listeners>
+		<!-- arrow插件实现用例失败重跑以及生成测试报告 -->
+		<listener class-name="com.demo.test.plugins.arrow.TestResultListener" />
+		<listener class-name="com.demo.test.plugins.arrow.RetryListener" />
+		<listener class-name="com.demo.test.plugins.arrow.PowerEmailableReporter" />
+	</listeners>
   
 </suite> <!-- Suite -->
